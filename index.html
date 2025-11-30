@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Star</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Container">
+            <div class="Header">
+                <img src="Website-Icon.png" alt="Icon" id="Website-Icon">
+                <div class="Header-Text">
+                     <h3>JavaScript -- Fun Lab</h3>
+                     <p>Simple Example + colorful playground + mini games + quizzes🍿</p>
+                </div>
+            </div>
+        <div class="Content">    
+            <div class="Lessons">
+                <a href="index.html" class="Lesson-Item">🏠 Welcome</a>
+                <a href="outout.html" class="Lesson-Item">📢 output</a>
+                <a href="var.html" class="Lesson-Item">📦 variables</a>
+                <a href="datatype.html" class="Lesson-Item">💻 DataTypes</a>
+                <a href="array.html" class="Lesson-Item">🍎 Arrays</a>
+                <a href="obj.html" class="Lesson-Item">👨‍💻 Objects</a>
+                <a href="condition.html" class="Lesson-Item">🚦 Condition</a>
+                <a href="loop.html" class="Lesson-Item">🔁 Loop</a>
+                <a href="function.html" class="Lesson-Item">🛠️ Functions</a>
+                <a href="minigame.html" class="Lesson-Item" id="Active">🌟 Mini Game</a>
+                <a href="quiz.html" class="Lesson-Item">🧪 Full Quiz</a>
+            </div>
+
+            <div class="MiniGame">
+                <div class="MiniGame-Text">
+                    <h2>Mini Game: Catch The Stars! 🌟</h2>
+                     <p id="p1">Click the falling stars before they reach the bottom!! You have 30 seconds</p>
+                </div>
+                <div class="GameArea">
+                    <div class="GameScreen" id="gameScreen">    
+                        <div class="star"></div>
+                        <div class="game-over" id="gameOver">
+                            <h3>Game Over!</h3>
+                            <p id="finalScore"></p>
+                        </div>
+                    </div>
+                    <div class="GameInfo">
+                        <div class="Stats">
+                            <div class="Stats-Text">
+                            <p>Time:</p>
+                            <p class="Sc-Num" id="timeDisplay">0</p>
+                            </div>
+                            <div class="Stats-Text">
+                            <p>Score:</p>
+                            <p class="Sc-Num" id="scoreDisplay">0</p>
+                            </div>
+                            <div class="Stats-Text">
+                            <p>Missed:</p>
+                            <p class="Sc-Num" id="missedDisplay">0</p>
+                            </div>
+                        </div>
+                    
+                        <div class="Controls">
+                            <button id="playBtn" onclick="startGame()">Play Again</button>
+                            <button onclick="togglePause()">⏸️ Pause</button>
+                        </div>
+                        <p id="p1">Click the falling stars as fast as you can!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
